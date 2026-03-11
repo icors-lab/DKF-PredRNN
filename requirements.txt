@@ -1,0 +1,6 @@
+torch==2.5.1
+numpy==1.24.3
+xarray==2024.7.0
+netCDF4==1.7.2
+matplotlib==3.8.4
+tqdm==4.67.1
