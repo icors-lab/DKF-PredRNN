@@ -5,6 +5,9 @@ This repository contains the official PyTorch implementation of **DKF-PredRNN++*
 
 The proposed model addresses the limitations of static physical priors in deep learning by embedding a **Differentiable Kalman Filter (DKF)** directly into a spatiotemporal recurrent network. This framework enables **Online State Correction**, allowing the model to dynamically adjust physical constraint strength and mitigate error accumulation in long-range sea surface temperature (SST) forecasting.
 
+## Model Architecture
+![Model Architecture](./figures/model.png)
+
 ## 2. Repository Structure
 The repository is organized as follows:
 - `main.py`: The core script containing model architecture, training loops, and detailed evaluation pipelines.
@@ -35,6 +38,11 @@ To verify the model without downloading the massive original dataset or performi
    - The script will finish in a few seconds.
    - It will display the forecasting metrics (RMSE, R2) for the samples.
    - A spatial visualization comparison map (Prediction vs. Ground Truth) will be saved in the `./results/` folder as `dkf_predrnn_viz_sample_1.png`.
+   - 
+### Visualization of Results
+<img width="4426" height="9286" alt="dkf_predrnn_sample_1" src="https://github.com/user-attachments/assets/0023c301-6040-4604-ba13-327fbd7d9c39" />
+
+
 
 ## 5. Full Training and Inference
 To reproduce the full experiments described in the paper:
